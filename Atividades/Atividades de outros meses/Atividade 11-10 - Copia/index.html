@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(221, 221, 255);
+    }
+    
+    /* NAV */
+    
+    nav{
+        display: flex;
+        padding: 15px;
+        background-color: blueviolet;
+        color: white;
+        font-family: 'Arial';
+        font-weight: 500;
+    }
+    .tltTOP{
+        margin-top: 3px;
+    }
+    input[type="search"]{
+        text-indent: 10px;
+        height: 6vh;
+        width: 15vw;
+        outline: none;
+        margin-left: 600px;
+        font-style: italic;
+        border: none;
+        border-radius: 3px;
+    }
+    input[type="search"]:focus{
+        transition: 0.3s;
+        outline: 2px rgb(0, 185, 0) solid;
+    }
+    #enviar{
+        margin-left: 5px;
+        width: 7vw;
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: blueviolet;
+        font-weight: 900;
+    }
+    #enviar:hover{
+        transition: 0.5s;
+        color: rgb(169, 85, 247);
+        cursor: pointer;
+    }
+    
+    /* MAIN */
+    
+    main{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 270px;
+    }
+    #form2{
+        border-radius: 5px;
+        width: 60vw;
+        background-color: white;
+        height: 70vh;
+        box-shadow: 0 7px 10px black;
+    }
+    .tltM{
+        border-radius: 5px 5px 0px 0px;
+        background-color: blueviolet;
+        color: white;
+        font-family: 'Arial';
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+    }
+    label{
+        margin-left: 15px;
+        font-family: 'Arial';
+    }
+    input[type=text]{
+        outline: none;
+        border: none;
+        width: 90%;
+        text-indent: 5px;
+        border-radius: 3px;
+        border-bottom: 1px solid black;
+        margin-left: 15px;
+    }
+    input[type=tel]{
+        outline: none;
+        border: none;
+        width: 90%;
+        text-indent: 5px;
+        border-radius: 3px;
+        border-bottom: 1px solid black;
+        margin-left: 15px; 
+    }
+    input[type=datetime-local]{
+        outline: none;
+        border: none;
+        width: 90%;
+        text-indent: 5px;
+        border-radius: 3px;
+        border-bottom: 1px solid black;
+        margin-left: 15px;
+    }
+    select{
+        outline: none;
+        font-size: 14px;
+        border: none;
+        width: 90%;
+        font-family: 'Arial';
+        text-indent: 5px;
+        border-radius: 3px;
+        border-bottom: 1px solid black;
+        margin-left: 15px;
+    }
+    
+    /* BOTÕES */
+    .contBTN{
+        display: flex;
+        float: right;
+        margin-top: 30px;
+    }
+    
+    #btn{
+        border: none;
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.381);
+        background-color: white;
+        height: 30px;
+        font-weight: bold;
+        font-family: 'Arial';
+        color: black;
+    }
+    #btn:hover{
+        transition: 0.5s;
+        cursor: pointer;
+        background: linear-gradient(180deg, white, rgb(209, 209, 209));
+        height: 35px;
+        padding: 5px;
+    }
+    #reset{
+        margin-left: 15px;
+        border-radius: 3px;
+        color: white;
+        font-size: 15px;
+        font-family: 'Arial';
+        width: 100px;
+        height: 33px;
+        border: none;
+        background-color: rgb(109, 31, 181);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.381);
+    }
+    #reset:hover{
+        background: linear-gradient(180deg, rgb(109, 31, 181), rgb(97, 22, 167));
+        transition: 0.5s;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    
+    /* FOOTER */
+    
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        background-color: rgb(119, 33, 199);
+        width: 100%;
+        height: 10vh;
+    }
+    footer>h3{
+        color: white;
+        font-size: medium;
+        text-align: center;
+        font-family: 'Arial';
+        font-weight: bold;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <h3 class="tltTOP"> ETE - Ministro Fernando Lyra</h3>
+            <form id="form1" action="" method="get">
+                <input required type="search" name="pesquisa" placeholder="O que você procura?">
+                <input required id="enviar" type="submit" value="Pesquisar">
+            </form>
+        </nav>
+    </header>
+    <main>
+        <form id="form2" action="" method="get">
+            <h3 class="tltM"> Formulário </h3>
+            <br>
+
+            <!-- NOME -->
+            <label for="nome">Nome completo:</label><br>
+            <input required type="text" name="nome" placeholder="Digite seu nome completo aqui">
+            <br><br>
+
+            <!-- E-MAIL -->
+            <label for="email">E-mail:</label><br>
+            <input required type="text" name="email"  placeholder="Digite seu melhor e-mail aqui" disabled>
+            <br><br>
+
+            <!-- TELEFONE -->
+            <label for="telefone">Telefone:</label><br>
+            <input required type="tel" name="telefone" required placeholder="xx 9xxxx-xxxx"  pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" />
+            <br><br>
+
+            <!-- DATA DE NASCIMENTO -->
+            <label for="nascimento">Data de nascimento:</label><br>
+            <input required type="datetime-local" name="nascimento">
+            <br><br>
+
+            <!-- CAMPO DE LEITURA -->
+            <label>Campo somente de leitura:</label><br>
+            <input required type="text" placeholder="Este é um campo somente para leitura" disabled>
+            <br><br>
+
+            <!-- ESTADO -->
+            <label for="estado">Estado:</label><br>
+            <select name="estado">
+                <option disabled selected>Escolha seu estado</option>
+                <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="AL"> Alagoas </option>
+                    <option value="BA"> Bahia </option>
+                    <option value="CE"> Ceará </option>
+                    <option value="MA"> Maranhão </option>
+                    <option value="PI"> Piauí </option>
+                    <option value="PE"> Pernambuco </option>
+                    <option value="PB"> Paraíba </option>
+                    <option value="RN"> Rio Grande do Norte </option>
+                    <option value="SE"> Sergipe </option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="">Paraná</option>
+                    <option value="">Rio Grande do Sul</option>
+                    <option value="">Santa Catarina</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="PR">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+
+            <br><br><br>
+            <div class="contBTN">
+                <input required type="submit" value="ENVIAR" id="btn">
+                <br>
+                <input id="reset" type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>Copyright © - Desenvolvedor: Carlson</h3>
+    </footer>
+</body>
+</html>

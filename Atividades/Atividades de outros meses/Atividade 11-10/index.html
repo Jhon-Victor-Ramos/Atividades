@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3 class="tltTOP"> ETE - Ministro Fernando Lyra</h3>
+            <form id="form1" action="" method="get">
+                <input required type="search" name="pesquisa" placeholder="O que você procura?">
+                <input required id="enviar" type="submit" value="Pesquisar">
+            </form>
+        </nav>
+    </header>
+    <main>
+        <form id="form2" action="" method="get">
+            <h3 class="tltM"> Formulário </h3>
+            <br>
+
+            <!-- NOME -->
+            <label for="nome">Nome completo:</label><br>
+            <input required type="text" name="nome" placeholder="Digite seu nome completo aqui">
+            <br><br>
+
+            <!-- E-MAIL -->
+            <label for="email">E-mail:</label><br>
+            <input required type="text" name="email" id="" placeholder="Digite seu melhor e-mail aqui" disabled>
+            <br><br>
+
+            <!-- TELEFONE -->
+            <label for="telefone">Telefone:</label><br>
+            <input required type="tel" name="telefone" id="" required placeholder="xx 9xxxx-xxxx"  pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" />
+            <br><br>
+
+            <!-- DATA DE NASCIMENTO -->
+            <label for="nascimento">Data de nascimento:</label><br>
+            <input required type="datetime-local" name="nascimento" id="">
+            <br><br>
+
+            <!-- CAMPO DE LEITURA -->
+            <label>Campo somente de leitura:</label><br>
+            <input required type="text" placeholder="Este é um campo somente para leitura" disabled>
+
+            <label for="estado">Estado:</label><br>
+            <select name="estado" id="">
+                <option disabled selected>Escolha seu estado</option>
+                <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="AL"> Alagoas </option>
+                    <option value="BA"> Bahia </option>
+                    <option value="CE"> Ceará </option>
+                    <option value="MA"> Maranhão </option>
+                    <option value="PI"> Piauí </option>
+                    <option value="PE"> Pernambuco </option>
+                    <option value="PB"> Paraíba </option>
+                    <option value="RN"> Rio Grande do Norte </option>
+                    <option value="SE"> Sergipe </option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="">Paraná</option>
+                    <option value="">Rio Grande do Sul</option>
+                    <option value="">Santa Catarina</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="PR">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+            <input required type="submit" value="ENVIAR" id="btn">
+            <br>
+            <input id="resetar" type="reset" value="Limpar">
+        </form>
+    </main>
+    <footer>
+        <h3 class="tltBot">Copyright © - Desenvolvedor: Jhon Victor</h3>
+    </footer>
+</body>
+</html>

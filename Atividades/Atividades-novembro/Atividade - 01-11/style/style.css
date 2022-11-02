@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header{
+    background-color: #5a2d82;
+    padding: 10px;
+}
+header>i>h1{
+    color: white;
+    margin-left: 5px;
+}
+header>input[type="button"]{
+    float: right;
+    margin: -34px 10px;
+    height: 35px;
+    width: 100px;
+    font-family: 'Poppins';
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: medium;
+    letter-spacing: .5px;
+    transition-duration: .4s;
+    outline: none;
+}
+header>input[type="button"]:hover{
+    transition: .2s;
+    cursor: pointer;
+    background: #d745ba;
+    color: white;
+}
+/* NAV */
+
+nav{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    transition-duration: .5s;
+    margin: 10px;
+}
+nav>a:hover{
+    transition: 0.4s;
+    font-size: 1.2em;
+}
+
+/* MAIN */
+
+main{
+    text-align: center;
+    height: 305px;
+}
+main>h2{
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+table{
+    display: inline-block;
+    justify-content: center;
+}
+th{
+    padding: 5px;
+}
+td{
+    padding: 5px;
+}
+td>a>img{
+    height: 30px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 16px;
+    display: flex;
+    height: 12vh;
+    background-color: #231722;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.pt1{
+    text-align: left;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.pt2{
+    margin-left: 270px;
+}
+.pt2>ol>li{
+    list-style: none;
+    padding: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.pt2>p:first-of-type{
+    text-align: center;
+    font-size: 14px;
+}
+.pt2>hr{
+    background-color: white;
+    width: 100%;
+}
+
+.pt3{
+    font-size: 14px;
+    padding-top: 10px;
+    margin-left: 150px;
+}
+.pt3>ol>li{
+    list-style: none;
+}
+.pt3>ol>li>img{
+    height: 15px;
+}

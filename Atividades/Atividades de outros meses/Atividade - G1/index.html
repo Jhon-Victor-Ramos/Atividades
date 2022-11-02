@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h4 class="tltM">G1</h4>
+        <form action="recebeDados.php" method="get">
+            <input class="btn" type="button" value="  Enviar">
+            <input type="button" value=" Pesquisar notícias  ">
+        </form>
+    </nav>
+    <div class="container">
+        <main>
+            <fieldset style="width: 1000px;">
+                <legend style="font-family: 'Poppins'; text-align: center; font-size: large; font-weight: 700; padding-left: 5px; padding-right: 5px;">Fale conosco</legend>
+                <div class="tudo">
+                <form action="recebeDados.php" method="get">
+                    <!-- NOME -->
+                    <label for="nome">Nome completo:</label> <br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui">
+                    <br><br>
+                    <!-- ASSUNTO -->
+                    <label for="assunto">Assunto:</label> <br>
+                    <select style="width: 170px;" name="opcao" id="choose" aria-placeholder="Escolha">
+                        <option selected class="opt" value="" disabled style="background-color: rgb(168, 168, 168); color: white;"> Escolha</option>
+                        <option class="opt" value="economia">Economia</option>
+                        <option class="opt" value="educacao">Educação</option>
+                        <option class="opt" value="esporte">Esporte</option>
+                        <option class="opt" value="saude">Saúde</option>
+                    </select>
+                    <br><br>
+                    <!-- TEXTO -->
+                    <label for="msg">Texto aqui:</label> <br>
+                    <textarea name="msg" id="" cols="140" rows="10" style="padding: 5px; margin-left: 5px;"></textarea>
+                    <br><br>
+                    <label for="txt">Aceito os termos de privacidade</label>
+                    <input class="txt" type="checkbox" name="" id="">
+                </form>   
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+
+        </main>
+    </div>
+</body>
+</html>
